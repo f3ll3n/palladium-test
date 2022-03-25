@@ -10,19 +10,144 @@ body *{
     text-decoration: none;
     list-style: none;
 }
-
 /* Переиспользуемые стили */
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.orange-text{
+    color: #C6876D;
+}
+.under{
+    vertical-align: super;
+    font-size: 9px;
+    font-weight: bolder;
+}
+.deployed{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 14px;
+    justify-content: center;
+    bottom: 0;
+    text-align: center;
+}
+
+.button-line{
+    width: 100%;
+    border: 1px solid rgba(34, 34, 34, 0.3);
+    height: 100%;
+}
+.button-line:before{
+    content: '';
+    position: absolute;
+}
+.button-box{
+    position: relative;
+}
+.button-box:hover::after{
+    opacity: 1;
+    animation: bg .9s linear 1;
+}
+.button-box:after{ 
+    content: '';
+    width: 204px;
+    height: 39px;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    margin: -0px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    transition: 0.2s;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-image:   linear-gradient(to right, #222 100%, #222 100%),
+                        linear-gradient(to bottom, #222 100%, #222 100%),
+                        linear-gradient(to right, #222 100%, #222 100%),
+                        linear-gradient(to bottom, #222 100%, #222 100%);
+    background-size:    100% 3px,
+                        3px 100%,
+                        100% 3px,
+                        3px 100%;
+    background-position:    0 0,
+                            100% 0,
+                            100% 100%,
+                            0 100%;   
+}
+.button-box:hover {
+    opacity: 1;
+}
+.button{
+    top: 0px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 0px;
+    height: 35px;
+    box-sizing: content-box;
+    z-index: 100;
+    position: relative;
+    background-color: #fff;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    background-color: #222;
+    width: 20px;
+    height: 1px;
+    left: -10px;
+}
+
+@keyframes bg {
+    0% {
+        background-size:    0 3px,
+                            3px 0,
+                            0px 3px,
+                            3px 0;
+    }
+    25% {
+        background-size:    100% 3px,
+                            3px 0,
+                            0 3px,
+                            3px 0;
+    }
+    50% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            0 3px,
+                            3px 0;
+    }
+    75% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            100% 3px,
+                            3px 0;
+    }
+    100% {
+        background-size:    100% 3px,
+                            3px 100%,
+                            100% 3px,
+                            3px 100%;
+    }
+}
+
 /* Header */
 .header-wrap{
     width: 100%;
     border-bottom: 1px solid #EBEBEB;
 }
 header{
+    position: relative;
+    bottom: 1px;
     font-size: 14px;
     line-height: 20px;
     display: flex;
@@ -30,24 +155,27 @@ header{
     align-items: center;
     max-width: 1440px;
     height: 85px;
-    
+    position: relative;
     margin: 0 auto;
 }
+/*map icon*/
 header .map-icon{
     border-right: 1px solid #EBEBEB;
     width: 86px;
     height: 86px;
     font-size: 18px;
 }
-
+/*header main nav and logo*/
 header .header-main{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 85%;
     max-width: 1268px;
     height: 100%;
     align-items: center;
+    transition: .2s;
 }
+
 header .logo{
     display: flex;
     justify-content: center;
@@ -57,8 +185,9 @@ header .logo{
 .logo{
     cursor: pointer;
 }
-header .logo:hover{
+header .logo:hover span{
     color: #C6876D;
+    transition: .3s;
 }
 header nav{
     color: #222222;
@@ -74,6 +203,7 @@ header nav li{
     position: relative;
 }
 header ul li a{
+    font-weight: 900;
     display: flex;
     height: 86px;
     opacity: 0.7;
@@ -82,6 +212,7 @@ header ul li a{
     box-sizing: border-box;
     transition: .3s;
 }
+/* nav items animation */
 header nav li a:hover{
     color: #222222;
     opacity: 1; 
@@ -104,21 +235,21 @@ header ul li:hover:after{
     left: 0px;
     opacity: 1;
 }
-header .nav-left{
+header nav{ 
     width: 278px;
-    position: relative;
-   /* left: 25px; */
 } 
 
-header .nav-right{
-    margin: 0px;
-    width: 278px;
-    position: relative;
-  /*  left: 18px; */
-}   
-
-header .phone-icon{
+/*phone icon*/
+header #phoneButton{
+    width: 86px;
+    display: flex;
     border-left: 1px solid #EBEBEB;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 86px;
+}
+header .phone-icon{
     width: 86px;
     font-size: 18px;
     height: 86px;
@@ -127,3 +258,85 @@ header .menu-icon{
     position: relative;
     top: 2px;
 }
+
+
+/*Map info deployed*/
+header #addressButton{
+    position: relative;
+    width: 86px;
+    height: 86px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1000;
+}
+header .address-deployed{
+    visibility: hidden;
+    width: 88%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    margin: 0 auto;
+    transition: .15s;
+}
+header .phone-deployed{
+    visibility: hidden;
+    width: 88%;
+    margin: 0 auto;
+    opacity: 0;
+    transition: .15s;
+}
+header .phone-deployed h2{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 0 30px 0 0;
+}
+
+header .address-deployed .vertical-line{
+    width: 1px;
+    height: 20px;
+    margin: 20px;
+    background-color: #EBEBEB;
+}
+/* phone info deployed */
+header #phoneButton{
+    position: absolute;
+    z-index: 1000;
+}
+header .phone-icon:hover .phone-deployed{
+    visibility: visible;
+    opacity: 1;
+}
+header .phone-icon:hover .icon-phone{
+    color: #C6876D;
+}
+header .map-icon:hover .address-deployed{
+    visibility: visible;
+    opacity: 1;
+}
+/*
+.main-wrap{
+    background-image: url('../img/repair-bg.jpg');
+    background-size: cover;
+}
+.main-wrap *{
+    color: #ffffff;
+}
+.main-wrap .button-box *{
+    background-color: inherit;
+}
+.main-wrap header nav ul li a{
+    opacity: 0.8;
+
+}
+
+.main-wrap .button-box:after{
+    width: 205px;
+    height: 40px;
+    padding: 0px 0px 0px 0px;
+    background-image:   linear-gradient(to right, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%),
+                        linear-gradient(to bottom, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%),
+                        linear-gradient(to right, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%),
+                        linear-gradient(to bottom, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+}
+*/
