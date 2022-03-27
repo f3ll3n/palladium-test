@@ -19,12 +19,4 @@
          url('../fonts/Gilroy-Semibold.woff2');
     font-weight: normal;
 }
-.font-stroke{
-    font-family: 'Gilroy';
-    font-weight: normal;
-    color: #fff;
-    -webkit-text-stroke: 1.5px rgba(0,0,0,1);
-    -webkit-text-fill-color: rgba(0,0,0,0);   
-    font-size: 64px;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
