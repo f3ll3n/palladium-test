@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="css/icon.css">
+    
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
@@ -68,7 +71,7 @@
         <section class="main-bnr">
             <div class="bnr-items-wrap">
                 <h1 class="bnr-text">
-                    Ремонт <span class="font-stroke">и</span> дизайн<br/>
+                    <span id="bnr-text">Ремонт <span class="font-stroke">и</span> дизайн<br/></span>
                     <span class="font-stroke">в Москве и Московской области</span>
                 </h1>
                 <div class="button-box">
@@ -104,7 +107,7 @@
                                         <span class="icon-arrow"></span>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="bnr_item_wrap">
@@ -117,7 +120,7 @@
                                         <span class="icon-arrow"></span>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="bnr_item_wrap">
@@ -126,7 +129,7 @@
                                 <p>Ремонт помещений</p>
                                 <div class="inner-banner_item">
                                     <p class="inner-bnr_text">С другой стороны реализация <br>  намеченных  плановых заданий <br> требуют от нас анализа.</p>
-                                    <div class="arrow-btn">
+                                    <div class="arrow-btn">                        
                                         <span class="icon-arrow"></span>
                                     </div>
                                 </div>
@@ -135,17 +138,281 @@
                     </div>
                     
                 </div>
-                <div class="arrow-btn arrow-btn_all">
-                    <span class="icon-arrow"></span>
+
+                <div class="arrow-btn arrow-btn-bottom arrow-btn_all">
+                    <a href="#gallery-title">
+                        <span class="icon-arrow"></span>
+                    </a>    
                 </div>
             </div>
         </section>
+        
     </div>
     <section class="body-wrap">
-        <div>
-
+            <section class="gallery">
+                <div id="gallery-title" class="gallery-title"> 
+                    <h2>Примеры <span class="font-stroke">выполненных</span> работ</h2>
+                </div>
+                <div class="wrap-cards">
+                    <div class="block block_wieght box1">
+                        <img src="img/Service Card Horizontal.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Новостройка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block block_height box2">
+                        <img src="img/Service Card Vertical.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Новостройка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <img src="img/Service Card.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Вторичка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <img src="img/Service Card-1.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Вторичка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block box3">
+                        <img src="img/Service Card Vertical-1.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Новостройка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block box">
+                        <img src="img/Service Card-2.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Вторичка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block box">
+                        <img src="img/Service Card-3.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Вторичка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block block_wieght box4">
+                        <img src="img/Service Card Horizontal-1.jpg" alt="">
+                        <div class="content">
+                            <div class="visible">
+                                <p>Новостройка</p>
+                            </div>
+                            <div class="hidden">
+                                <div class="terms">
+                                    <p class="text-terms">Сроки</p>
+                                    <p class="terms-data">4 - 5 Дней</p>
+                                </div>
+                                <div class="terms">
+                                    <p class="text-terms">Стоимость</p>
+                                    <p class="terms-data">Нет данных</p>
+                                </div>
+                                <div class="terms">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-bottom"> 
+                    <div class="button-box">
+                        <div class="button-line"> 
+                            <a href="#" class="button">
+                                Все проекты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        <section class="feedback-wrap">
+            <div class="feedback-title"> 
+                <h2>Связаться <span class="font-stroke"> с нами</span></h2>
+            </div>
+            <div class="feedback-content">
+                <div class="feedback-block">
+                    <div class="contact-col">
+                        <p class="contact-name">Офис</p>
+                        <p class="contact-value">Москва, ул. Уличная, д. 1, оф. 1</p>
+                    </div>
+                    <div class="contact-col">
+                        <p class="contact-name">Email</p>
+                        <p class="contact-value">company@company.ru</p>
+                    </div>
+                    <div class="contact-col">
+                        <p class="contact-name">Социальные сети</p>
+                        <div class="social-icon"></div>
+                        <div class="social-icon"></div>
+                        <div class="social-icon"></div>
+                    </div>
+                </div>
+                <div class="feedback-block block_2">
+                    <div class="contact-col">
+                        <p class="contact-name">Режим работы</p>
+                        <p class="contact-value">Пн-Вт: 10<span class="under">00</span> — 19<span class="under">00</span>; Сб-Вс: 10<span class="under">00</span> — 15<span class="under">00</span></p>
+                    </div>
+                    <div class="contact-col">
+                        <p class="contact-name">Телефон</p>
+                        <p class="contact-value">8 (800) 900-00-00</p>
+                    </div>
+                </div>
+                <div class="feedback-form_block">
+                    <p class="contact-name">Остались вопросы?</p>
+                    <form action="danila" method="get">
+                        <div class="input-name">
+                            <label><span>Ваше имя</span>
+                                <input name="username" type="text" required placeholder="Иван Иванов">
+                            </label>
+                        </div> 
+                        <div class="input-phone">
+                            <label><span>Телефон / E-mail</span>
+                                <input name="phoneNum" type="text" required placeholder="example@example.com">
+                            </label>
+                        </div>
+                        <div class="input-message">
+                            <label><span>Ваше сообщение</span>
+                                <input name="message" type="text" required placeholder="Текст обращения">
+                            </label>
+                            <label class="input-files">
+                                <span class="icon-clip getFiles"></span>
+                                <input class="inputfile" type="file" name="file">
+                            </label>
+                        </div>
+                        <div class="privacy-policy_block">
+                            <p class="privacy-policy_text">
+                                Нажимая на кнопку «Получить консультацию», вы соглашаетесь <br> на <a class="privacy-policy-link" href="#">обработку персональных данных</a>
+                            </p>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <div class="formSubmit-bottom"> 
+                                <div class="button-box">
+                                    <div class="button-line"> 
+                                        <span class="button">
+                                            Получить консультацию
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
     </section>
+    <footer>
+        <p class="footer-text"><span class="bold">© 2022 Сompany.</span> Соглашение об обработке персональных данных и политика конфиденциальности</p>
+        <p>Сделано в <span class="bold">Palladiumlab</span></p>
+    </footer>
 
     <script src="script.js">
     

@@ -30,15 +30,19 @@ jQuery(function(){
             $('.bnr-position').removeClass('bnr-bottom');
             $('.bnr-bottom').addClass('hide')
             if($('.bnr_item_wrap')[i] == $('.bnr_item_wrap')[0]){
+                $('#bnr-text').html('Услуги по ремонту<br/>');
                 $('.main-wrap').addClass('main-wrap1');
             }
             else if($('.bnr_item_wrap')[i] == $('.bnr_item_wrap')[1]){
+                $('#bnr-text').html('Виды работ по ремонту<br/>');
                 $('.main-wrap').addClass('main-wrap2');
             }
             else if($('.bnr_item_wrap')[i] == $('.bnr_item_wrap')[2]){
+                $('#bnr-text').html('Дизайн интерьера<br/>');
                 $('.main-wrap').addClass('main-wrap3');
             }
             else if($('.bnr_item_wrap')[i] == $('.bnr_item_wrap')[3]){
+                $('#bnr-text').html('Ремонт помещений<br/>');
                 $('.main-wrap').addClass('main-wrap4');
             }
             else{
@@ -48,6 +52,7 @@ jQuery(function(){
          });
          $('.bnr_item_wrap')[i].addEventListener('mouseleave', () =>{
             if($('.bnr_item_wrap')[i] == $('.bnr_item_wrap')[i]){
+                $('#bnr-text').html('Ремонт <span class="font-stroke">и</span> дизайн<br>');
                 $('.bnr-position').removeClass('main-wrap');
                 $('.bnr-position').removeClass(`main-wrap1`);
                 $('.bnr-position').removeClass(`main-wrap2`);

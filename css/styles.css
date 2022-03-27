@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body *{
     font-family: 'Gilroy';
@@ -60,6 +61,7 @@ body *{
 
 .button-line{
     width: 203px;
+    font-weight: bold;
     border: 1px solid rgba(34, 34, 34, 0.3);
     height: 100%;
 }
@@ -161,7 +163,7 @@ body *{
 
 .font-stroke{
     font-family: 'Gilroy';
-    font-weight: 900;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 1.5px rgba(0,0,0,1);
     -webkit-text-fill-color: rgba(0,0,0,0);   
@@ -340,6 +342,11 @@ header .phone-icon:hover .phone-deployed{
 header .phone-icon:hover .icon-phone{
     color: #C6876D;
 }
+header .map-icon:hover .icon-map{
+color: #C6876D;
+
+}
+
 header .map-icon:hover .address-deployed{
     visibility: visible;
     opacity: 1;
@@ -423,8 +430,9 @@ header .map-icon:hover .address-deployed{
     z-index: 4;
     position: relative;
     font-size: 64px;
+    line-height: 75px;
     font-weight: 900;
-    padding: 0 0 48px 0px;
+    padding: 0 0 54px 0px;
 }
 .main-bnr .bnr-items-wrap .button-box{
     margin: 0 auto;
@@ -432,7 +440,7 @@ header .map-icon:hover .address-deployed{
 }
 .bnr-items-wrap{
     width: 100%;
-    padding: 65px 0 0 0;
+    padding: 58px 0 0 0;
 }
 .bnr-bottom{
     position: relative;
@@ -470,7 +478,7 @@ header .map-icon:hover .address-deployed{
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.315);
     font-size: 20px;
 }
 #bnr-btn4:hover{
@@ -486,9 +494,9 @@ header .map-icon:hover .address-deployed{
     border: #219653;
 }
 .buttons-bnr_item:hover{
-    height: 75vh;
-    padding: 320px 0 0 0;
-    margin: 0;
+    height: 90vh;
+    padding: 120% 0 0 0;
+    margin: 0 0 0 0;
     border: #EB5757;
     bottom: 0;
     z-index: 1;
